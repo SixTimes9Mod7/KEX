@@ -16,7 +16,12 @@ EatKex::~EatKex()
 
 void EatKex::Eat(int prm)
 {
-	if (prt->GetKex() == 0)
+	if (prm < 0)
+	{
+		prt->AddKex(-prm);
+		cout << "You threw up " << -prm << " kexes.\n";
+	}
+	else if (prt->GetKex() <= 0)
 	{
 		cout << "You haven't got kexes!\n";
 	}
