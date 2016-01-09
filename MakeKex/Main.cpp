@@ -9,6 +9,5 @@ int main()
 	Control mainControl;
 	mainControl.Init();
 	mainControl.Run();
-
 	return 0;
 }
