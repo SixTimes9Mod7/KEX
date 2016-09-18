@@ -1,5 +1,3 @@
-#include <iostream>
-#include <string>
 #include "control.h"
 using namespace std;
 #pragma once
@@ -7,7 +5,7 @@ using namespace std;
 int main()
 {
 	Control mainControl;
-	mainControl.Init();
+	mainControl.Hello();
 	mainControl.Run();
 	return 0;
 }
